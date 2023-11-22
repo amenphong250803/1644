@@ -37,4 +37,12 @@ router.get('/admin', (req, res) => {
   res.render('admin', { layout: 'admin_layout.hbs'})
 })
 
+
+router.get('/', (req, res) => {
+    var city = 'HN'
+    res.render("home", {year: '2023'}, city)
+
+})
+
+
 module.exports = router;
